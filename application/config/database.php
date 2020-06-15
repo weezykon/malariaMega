@@ -74,7 +74,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = true;
 
-// $_ENV['JAWSDB_URL'] = 'mysql://wz371y0jax7mj7jm:gxn07k53cv4l55b6@g8mh6ge01lu2z3n1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/x0ovfrw1ud2qxyr6';
+$_ENV['JAWSDB_URL'] = 'mysql://l3wjl62z5pv3bcs1:adn53y3hd2p0yn4g@nba02whlntki5w2p.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/qk969qax5yz3a2pi';
 
 if ($_SERVER['HTTP_HOST'] == "localhost") {
     $url = 'mysql://root:root@127.0.0.1:3306/malaria?reconnect=true';
