@@ -68,4 +68,30 @@ class Doctor_model extends CI_Model
 
         return [];
     }
+
+    public function fetchPatientTests($id)
+    {
+        $this->db->select('*');
+        $this->db->where('m_t_patient', $id);
+        $this->db->order_by('m_t_id', 'desc');
+        $query = $this->db->get($this->tests);
+        $res = $query->result_array();
+        if ($res) {
+            return $res;
+        }
+
+        return [];
+    }
+
+    public function fetchPatientTestById($id) {
+        $this->db->select('*');
+        $this->db->where('m_t_id', $id);
+        $query = $this->db->get($this->tests);
+        $res = $query->row_array();
+        if ($res) {
+            return $res;
+        }
+
+        return '';
+    }
 }

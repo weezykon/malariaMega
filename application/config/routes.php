@@ -7,6 +7,9 @@ $route['login'] = 'AuthController/login';
 $route['register'] = 'AuthController/register';
 $route['logout'] = 'AuthController/logout';
 
+// Patient view result
+$route['test/(:any)'] = 'HomeController/result/$1';
+
 // Doctor
 $route['doctor'] = 'DoctorController';
 
